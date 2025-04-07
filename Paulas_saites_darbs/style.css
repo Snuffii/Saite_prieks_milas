@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color:#2F2E2E;
+    font-weight: 600;
+    background-color: beige;
+}
+
+/*Pievinota navigacija*/
+.book {
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    height: 200px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.book_page a {
+    text-decoration: none;
+    color:inherit;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    
+}
+
+.book_page a:hover {
+    color:black;
+    text-decoration-color: black;
+    transition: text-decoration-color 0.5s;
+}
+
+.book_page {
+    margin-bottom: 10%;
+    margin-right: 8%;
+    color: #696969;
+    font-weight: 500;
+}
+
+/*Pievienots galvenā teksta stilizēšana*/
+.main_text {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 10%;
+    flex-direction: column;
+
+}
+
+.ievads img {
+    height: 40vh;
+
+    float: right;
+
+    shape-outside: url(bildes/Maris_Berzins.png);
+}
