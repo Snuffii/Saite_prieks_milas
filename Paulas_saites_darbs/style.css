@@ -4,22 +4,77 @@ body {
     font-family: 'Inter', sans-serif;
     color:#2F2E2E;
     font-weight: 600;
-    background-color: beige;
+    background-color: #FADBAD;
 }
+
+#menu_slide {
+    height: 50px;
+    width: 50px;
+    margin-right: auto;
+    position: relative;
+}
+#menu_slide span {
+    height: 5px;
+    width: 70%;
+    background-color: black;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s ease;
+}
+#menu_slide span:nth-child(1) {
+    top: 25%;
+}
+#menu_slide span:nth-child(3) {
+    top: 75%;
+}
+
+#menu_slide.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+#menu_slide.active span:nth-child(2) {
+    opacity: 0;
+}
+#menu_slide.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 
 /*Pievinota navigacija*/
 .book {
+    background: url(bildes/book.jpg) no-repeat;
+
     border: 2px;
     border-color: black;
     border-style: solid;
-    height: 200px;
-    width: 150px;
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-end;
     justify-content: center;
+    
     margin-left: 5%;
+    margin-top: 5%;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate3d(-100vw, 0, 0);
+    transition: transform 0.4s ease;
+
+    overflow: hidden;
+
+    height: 200px;
+    width: 150px;
+}
+
+.book.visible {
+    transform: translate3d(0vw, 0, 0);
 }
 
 .book_page a {
@@ -43,14 +98,35 @@ body {
     font-weight: 500;
 }
 
-/*Pievienots galvenā teksta stilizēšana*/
-.main_text {
-    display: flex;
-    margin-left: 15%;
-    margin-right: 10%;
-    flex-direction: column;
 
+/*Pievienots galvenā teksta stilizēšana*/
+/*Nonemt, ja rodas kaadas nesaprasanas vai kluudas!! */
+.main_text {
+    background-color: #A76D4D;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
 }
+
+#whole_book {
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 10%;
+    flex-direction: row;
+    transition: margin-left 0.4s ease;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #FADBAD;
+    border: solid 2px black;
+}
+
+.page {
+    border: solid 2px black;
+    width: 595px;
+    height: 842px;
+    
+}
+
 
 .ievads img {
     height: 40vh;
@@ -59,3 +135,4 @@ body {
 
     shape-outside: url(bildes/Maris_Berzins.png);
 }
+
