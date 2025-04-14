@@ -101,12 +101,12 @@ body {
 
 /*Pievienots galvenā teksta stilizēšana*/
 /*Nonemt, ja rodas kaadas nesaprasanas vai kluudas!! */
-.main_text {
+/* .main_text {
     background-color: #A76D4D;
     width: 70vw;
     justify-content: center;
     align-items: center;
-}
+}*/ 
 
 #whole_book {
     display: flex;
@@ -117,7 +117,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: #FADBAD;
-    border: solid 2px black;
+
 }
 
 .page {
