@@ -19,43 +19,71 @@
     <div class="book">
         <!--Tiek ievieti linki uz citiem HTML failiem, stilizēti pēc grāmatas lapām-->
         <div class="book_page">
-            <a href="book/page1.html">Autors</a>
+            <a href="#" data-page="2">Autors</a>
         </div>
         <div class="book_page">
-            <a href="book/page2.html">Laoreet</a>
+            <a href="#" data-page="3">Laoreet</a>
         </div>
         <div class="book_page">
-            <a href="book/page3.html">Pulvinar</a>
+            <a href="#" data-page="4">Pulvinar</a>
         </div>
         <div class="book_page">
-            <a href="book/page4.html">Enim</a>
+            <a href="#" data-page="5">Enim</a>
         </div>
     </div>
     
     <!--Pievienots elements kurš atbildēs par mājaslapas rakstisko daļu-->
-    <div class="main_text">
-        <div id="whole_book">
-            <div class="page">
-                <p>
-                    Māris Bērziņš ir latviešu rakstnieks un dramaturgs. Viņš ir pazīstams kā vairāku romānu, stāstu krājumu un lugu autors, kas guvuši lasītāju un kritiķu atzinību. Savos darbos Bērziņš bieži apskata Latvijas vēstures notikumus un sabiedrībai aktuālas tēmas. Māris Bērziņš ir latviešu rakstnieks un dramaturgs. Viņš ir pazīstams kā vairāku romānu, stāstu krājumu un lugu autors, kas guvuši lasītāju un kritiķu atzinību. Savos darbos Bērziņš bieži apskata Latvijas vēstures notikumus un sabiedrībai aktuālas tēmas. Māris Bērziņš ir latviešu rakstnieks un dramaturgs. Viņš ir pazīstams kā vairāku romānu, stāstu krājumu un lugu autors, kas guvuši lasītāju un kritiķu atzinību. Savos darbos Bērziņš bieži apskata Latvijas vēstures notikumus un sabiedrībai aktuālas tēmas. Māris Bērziņš ir latviešu rakstnieks un dramaturgs. Viņš ir pazīstams kā vairāku romānu, stāstu krājumu un lugu autors, kas guvuši lasītāju un kritiķu atzinību. Savos darbos Bērziņš bieži apskata Latvijas vēstures notikumus un sabiedrībai aktuālas tēmas. Māris Bērziņš ir latviešu rakstnieks un dramaturgs. Viņš ir pazīstams kā vairāku romānu, stāstu krājumu un lugu autors, kas guvuši lasītāju un kritiķu atzinību. Savos darbos Bērziņš bieži apskata Latvijas vēstures notikumus un sabiedrībai aktuālas tēmas. Māris Bērziņš ir latviešu rakstnieks un dramaturgs. Viņš ir pazīstams kā vairāku romānu, stāstu krājumu un lugu autors, kas guvuši lasītāju un kritiķu atzinību. Savos darbos Bērziņš bieži apskata Latvijas vēstures notikumus un sabiedrībai aktuālas tēmas. Māris Bērziņš ir latviešu rakstnieks un dramaturgs. Viņš ir pazīstams kā vairāku romānu, stāstu krājumu un lugu autors, kas guvuši lasītāju un kritiķu atzinību. Savos darbos Bērziņš bieži apskata Latvijas vēstures notikumus un sabiedrībai aktuālas tēmas. Māris Bērziņš ir latviešu rakstnieks un dramaturgs. Viņš ir pazīstams kā vairāku romānu, stāstu krājumu un lugu autors, kas guvuši lasītāju un kritiķu atzinību. Savos darbos Bērziņš bieži apskata Latvijas vēstures notikumus un sabiedrībai aktuālas tēmas. Māris Bērziņš ir latviešu rakstnieks un dramaturgs. Viņš ir pazīstams kā vairāku romānu, stāstu krājumu un lugu autors, kas guvuši lasītāju un kritiķu atzinību. Savos darbos Bērziņš bieži apskata Latvijas vēstures notikumus un sabiedrībai aktuālas tēmas.
-                </p>
-            </div>
-            <div class="page">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula velit nec nisl maximus, eu condimentum lectus lobortis. Quisque dictum metus at arcu facilisis, nec fermentum justo cursus. Sed sit amet sapien ut libero venenatis tincidunt. Nulla facilisi. Vivamus at dui nec justo cursus tincidunt. Donec vel magna ut libero tincidunt tincidunt. Integer vehicula velit nec nisl maximus, eu condimentum lectus lobortis.
-                </p>
-            </div>
-        </div>    
+    <div id="flipbook">
+        <div class="hard cover first">
+          <div>
+            <h1>Svina garša</h1>
+            <h3>Māris Bērziņš</h3>
+          </div>
+        </div>
+        <div class="hard fixed cover first"></div>
+        <div class="page info odd own-size saturs" data-page="book/page1.html"></div>
+        <div class="page info even own-size gramatas_saturs" data-page="book/page2.html"></div>
+        <div class="page info odd own-size" data-page="book/page3.html"></div>
+        <div class="page info even own-size" data-page="book/page4.html"></div>
+        <div class="page info odd own-size" data-page="book/page5.html"></div>
+        <div class="page info even own-size" data-page="book/page6.html"></div>
+        <div class="page info odd own-size" data-page="book/page7.html"></div>
+        <div class="page info even own-size" data-page="book/page8.html"></div>
+        <div class="page info odd own-size" data-page="book/page9.html"></div>
+        <div class="page info even own-size" data-page="book/page10.html"></div>
+        <div class="page info odd own-size" data-page="book/page11.html"></div>
+        <div class="page info even own-size" data-page="book/page12.html"></div>
+        <div class="hard fixed cover back"></div>
+        <div class="hard cover back">
+          Beigas<br><small>Veidoja: Paula Apsīte</small><br><small>No 9c.klases</small>
+        </div>
     </div>
+      
 
-    <hr>
+
 
     <!--Izveidota kājene ar lapas izveidotāju-->
-    <footer>
+    <!--<footer>
         <small>Veidoja: Paula Apsīte</small>
         <br>
         <small>No 9c.klases</small>
-    </footer>
-<script src="interaction.js"></script>
+    </footer>-->
+<script src="jquery.js"></script>
+<script src="turn.min.js"></script>
+<script src="interaction.js"></script>    
+<script>
+    $("#flipbook").turn({
+      width: 960,
+      height: 600,
+      autoCenter: true,
+      display: 'double',
+      hardwareAcceleration: true,
+      when: {
+        turning: function(event, page, view) {
+          console.log("Turning to page", page);
+        }
+      }
+    });
+    </script>    
 </body>
 </html>
