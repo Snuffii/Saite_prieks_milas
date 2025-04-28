@@ -1,233 +1,302 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'PT Serif', serif;
-    color: #F5F5DC;
-    font-weight: 500;
-    background: #a3b18a;
-    display: grid;
-    place-content: center;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+  font-family: "PT Serif", serif;
+  color: #f5f5dc;
+  font-weight: 500;
+  background: #a3b18a;
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #menu_slide {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    }
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
 #menu_slide span {
-    height: 5px;
-    width: 70%;
-    background-color: black;
-    border-radius: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .4s ease;
+  height: 5px;
+  width: 70%;
+  background-color: black;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s ease;
 }
 #menu_slide span:nth-child(1) {
-    top: 25%;
+  top: 25%;
 }
 #menu_slide span:nth-child(3) {
-    top: 75%;
+  top: 75%;
 }
 
 #menu_slide.active span:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 #menu_slide.active span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 #menu_slide.active span:nth-child(3) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
-
 
 /*Pievinota navigacija*/
 .book {
-    background: url(bildes/book.jpg) no-repeat;
-    border: solid black 2px;
+  background: #bfc4ac;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    justify-content: center;
-    
-    margin-left: 5%;
-    margin-top: 5%;
-    
-    position: fixed;
-    left: 0;
-    top: 0;
-    transform: translate3d(-100vw, 0, 0);
-    transition: transform 0.4s ease;
+  border: solid 2px transparent;
+  border-radius: 10px;
 
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 
-    height: 200px;
-    width: 150px;
+  margin-left: 5%;
+  margin-top: 5%;
 
-    z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translate3d(-100vw, 0, 0);
+  transition: transform 0.4s ease;
+
+  overflow: hidden;
+
+  height: 200px;
+  width: 150px;
+
+  z-index: 1;
 }
 
 .book.visible {
-    transform: translate3d(0vw, 0, 0);
+  transform: translate3d(0vw, 0, 0);
 }
 
 .book_page a {
-    text-decoration: none;
-    color:inherit;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    
+  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: transparent;
 }
 
 .book_page a:hover {
-    color:black;
-    text-decoration-color: black;
-    transition: text-decoration-color 0.5s;
+  color: black;
+  text-decoration-color: black;
+  transition: text-decoration-color 0.5s;
 }
 
 .book_page {
-    margin-bottom: 10%;
-    margin-right: 8%;
-    color: #696969;
-    font-weight: 500;
+  margin-bottom: 10%;
+  color: #4b4a4a;
+  font-weight: 500;
 }
 
-
 #flipbook .hard.cover {
-    background: linear-gradient(to bottom left, #344E41, #375441);
-    color: #F5F5DC;
-    font-size: 1.6em;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
+  background: linear-gradient(to bottom left, #344e41, #375441);
+  color: #f5f5dc;
+  font-size: 1.6em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#flipbook .hard.cover .centrets_teksts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#flipbook .hard.cover h6 {
+  margin-bottom: 24px;
+  font-style: italic;
+  align-self: center; /* Atstāj h6 horizontli */
 }
 
 #flipbook .page.info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 1.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.1em;
 
-    color: #F5F5DC;
-    vertical-align: center;
-    align-items: center;
+  color: #f5f5dc;
+  vertical-align: center;
+  align-items: center;
 }
 
 #flipbook .page.saturs h1 {
-    font-size: 2.1em;
-    margin-top: 25%;
-    margin-left: 50px;
-    margin-right: 50px;
+  font-size: 2.1em;
+  margin-top: 25%;
+  margin-left: 58px;
+  margin-right: 50px;
 }
 
 #flipbook .page.saturs ul {
-    list-style: none;
-    font-size: 1.2em;
+  list-style: none;
+  font-size: 1.2em;
 }
 
 #flipbook .page.saturs li a {
-    text-decoration: none;
-    color:#f5f5dcd1;
-    text-decoration-color: transparent;
-    text-align: left;
-    float: left;
-    width: 190px;
-    border: solid 2px transparent;
-    border-radius: 30px;
-    margin-top: 6px;
-    margin-left: 10px;
-    white-space: pre;
+  text-decoration: none;
+  color: #f5f5dcd1;
+  text-decoration-color: transparent;
+  text-align: left;
+  float: left;
+  width: 220px;
+  border: solid 2px transparent;
+  border-radius: 30px;
+  margin-top: 13px;
+  margin-left: 10px;
+  white-space: pre;
 }
 
 #flipbook .page.saturs li a span {
-    float: right;
-    margin-right: 10px;
+  float: right;
+  margin-right: 10px;
 }
 
 #flipbook .page.saturs li a:hover {
-    color:#F5F5DC;
-    text-decoration-color: #F5F5DC;
-    transition: text-decoration-color 0.5s;
+  color: #f5f5dc;
+  text-decoration-color: #f5f5dc;
+  transition: text-decoration-color 0.5s;
 }
 
 #flipbook .page.saturs li a:hover {
-    background: #263e2e;
+  background: #263e2e;
 }
 
+#flipbook .page .info .ievada_teksts * {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+  color: #f5f5dc;
+  vertical-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
 
-#flipbook .page.gramatas_saturs p{
-    margin:20px 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 16px;
+#flipbook .page.gramatas_saturs p {
+  margin: 20px 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  text-align: justify;
 }
 
 #flipbook .page.gramatas_saturs h1 {
-    margin:20px 0px;
-    margin-left: 20px;
-    margin-right: 20px;
+  margin: 20px 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 40px;
 }
 
+#flipbook .page.gramatas_saturs h1 span {
+  font-size: 15px;
+}
+
+#flipbook .page.gramatas_saturs .atzina {
+  font-size: 20px;
+  font-style: italic;
+}
+
+#flipbook .page.gramatas_saturs .komentars {
+  font-size: 18px;
+}
+
+#flipbook .page.gramatas_saturs .info_avots {
+  font-size: 13px;
+  position: absolute;
+  margin-top: 500px;
+  text-align: center;
+}
+
+#flipbook .page.gramatas_saturs hr {
+  width: 90%;
+  margin-left: 5%;
+}
+
+#flipbook .page.gramatas_saturs small {
+  position: absolute;
+  margin-top: 550px;
+}
 
 #flipbook .own-size {
-    height: 582px;
-    width: 460px;
+  height: 582px;
+  width: 460px;
 }
 
 .page.info.even {
-    background: linear-gradient(to right, #496e4c 95%, #3a5a40 100%);
-    border-top-right-radius: 80px 5px;
-    border-bottom-right-radius: 80px 5px;
+  background: linear-gradient(to right, #496e4c 95%, #3a5a40 100%);
+  border-top-right-radius: 80px 5px;
+  border-bottom-right-radius: 80px 5px;
 }
 .page.info.odd {
-    background: linear-gradient(to left, #496e4c 95%, #3a5a40 100%);
-    border-top-left-radius: 80px 5px;
-    border-bottom-left-radius: 80px 5px;
+  background: linear-gradient(to left, #496e4c 95%, #3a5a40 100%);
+  border-top-left-radius: 80px 5px;
+  border-bottom-left-radius: 80px 5px;
 }
 
 #flipbook .hard.cover.first::after,
 #flipbook .hard.cover.back::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background: #2c3e2f;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: #2c3e2f;
 }
 
 #flipbook .hard.cover.back::after {
-    left: 0; /* Spine on the left side of front cover */
-    border-right: 1px solid #344E41;
+  left: 0; /* Spine on the left side of front cover */
+  border-right: 1px solid #344e41;
 }
 
 #flipbook .hard.cover.first::after {
-    right: 0; /* Spine on the right side of back cover */
-    border-left: 1px solid #344E41;
+  right: 0; /* Spine on the right side of back cover */
+  border-left: 1px solid #344e41;
 }
 
 #flipbook .hard.cover.first,
 #flipbook .hard.cover.back {
-    background: linear-gradient(to left, #344E41 95%, #455e51 100%);
-    background: linear-gradient(to right, #344E41 95%, #303e35 100%);
+  background: linear-gradient(to left, #344e41 95%, #455e51 100%);
+  background: linear-gradient(to right, #344e41 95%, #303e35 100%);
 }
 
+#flipbook .hard.cover.back {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+#flipbook .hard.cover.back footer {
+  margin-top: auto;
+  margin-bottom: 25px;
+}

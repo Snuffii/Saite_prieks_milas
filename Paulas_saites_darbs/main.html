@@ -1,93 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!--Tiek savienots(linkots) css fails ar html-->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="menu_slide">
-        <span></span>
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
     <!--Izveidota navigacija, stilizētā pēc grāmatas-->
     <div class="book">
-        <!--Tiek ievieti linki uz citiem HTML failiem, stilizēti pēc grāmatas lapām-->
-        <div class="book_page">
-            <a href="#" data-page="2">Autors</a>
-        </div>
-        <div class="book_page">
-            <a href="#" data-page="3">Laoreet</a>
-        </div>
-        <div class="book_page">
-            <a href="#" data-page="4">Pulvinar</a>
-        </div>
-        <div class="book_page">
-            <a href="#" data-page="5">Enim</a>
-        </div>
+      <!--Tiek ievieti linki uz citiem HTML failiem, stilizēti pēc grāmatas lapām-->
+      <div class="book_page">
+        <a href="Navigacija/autors.html">Autors</a>
+      </div>
+      <div class="book_page">
+        <a href="Navigacija/notikumi.html">Vēstures notikumi</a>
+      </div>
+      <div class="book_page">
+        <a href="Navigacija/gramatas_varoni.html">Gramatas Varoņi</a>
+      </div>
+      <div class="book_page">
+        <a href="Navigacija/atzinas.html">Atziņas</a>
+      </div>
     </div>
-    
+
     <!--Pievienots elements kurš atbildēs par mājaslapas rakstisko daļu-->
     <div id="flipbook">
-        <div class="hard cover first">
-          <div>
-            <h1>Svina garša</h1>
-            <h3>Māris Bērziņš</h3>
-          </div>
+      <div class="hard cover first">
+        <h1>Svina garša</h1>
+        <h3>Māris Bērziņš</h3>
+        <h1>Vajag ierakstit to, ka graamata ir jaatver</h1>
+      </div>
+      <div class="hard fixed cover first"></div>
+      <div class="page info odd own-size saturs">
+        <div class="gramatas_saturs">
+          <h1>Saturs</h1>
+          <hr />
+          <ul>
+            <li>
+              <a href="#" data-page="4"> Viens<span>1</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="6"> Divi <span>2</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="8"> Tris <span>3</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="10"> Cetri <span>4</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="12"> Pieci <span>5</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="14"> Sesi <span>6</span></a>
+            </li>
+          </ul>
         </div>
-        <div class="hard fixed cover first"></div>
-        <div class="page info odd own-size saturs" data-page="book/page1.html"></div>
-        <div class="page info even own-size gramatas_saturs" data-page="book/page2.html"></div>
-        <div class="page info odd own-size gramatas_saturs" data-page="book/page3.html"></div>
-        <div class="page info even own-size gramatas_saturs" data-page="book/page4.html"></div>
-        <div class="page info odd own-size gramatas_saturs" data-page="book/page5.html"></div>
-        <div class="page info even own-size gramatas_saturs" data-page="book/page6.html"></div>
-        <div class="page info odd own-size gramatas_saturs" data-page="book/page7.html"></div>
-        <div class="page info even own-size gramatas_saturs" data-page="book/page8.html"></div>
-        <div class="page info odd own-size gramatas_saturs" data-page="book/page9.html"></div>
-        <div class="page info even own-size gramatas_saturs" data-page="book/page10.html"></div>
-        <div class="page info odd own-size gramatas_saturs" data-page="book/page11.html"></div>
-        <div class="page info even own-size gramatas_saturs" data-page="book/page12.html"></div>
-        <div class="page info odd own-size gramatas_saturs" data-page="book/page13.html"></div>
-        <div class="page info even own-size gramatas_saturs" data-page="book/page14.html"></div>
-        <div class="page info odd own-size gramatas_saturs" data-page="book/page15.html"></div>
-        <div class="page info even own-size gramatas_saturs" data-page="book/page16.html"></div>
-        <div class="hard fixed cover back"></div>
-        <div class="hard cover back">
-          Beigas<br><small>Veidoja: Paula Apsīte</small><br><small>No 9c.klases</small>
+      </div>
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>JAIZVEIDO BILDE PRIEKS COVERIEM AR SHADOWIEM!!!</h1>
+          <p>
+            Steve Jobs is the authorized biography of Steve Jobs. The biography was written at the request of Jobs by
+            acclaimed biographer Walter Isaacson, a former executive at CNN and Time who has written best-selling
+            biographies about Benjamin Franklin and Albert Einstein.
+          </p>
+          <p>
+            Based on more than forty interviews with Jobs conducted over two years—in addition to interviews with more
+            than one hundred family members, friends, adversaries, competitors, and colleagues—Isaacson was given
+            "exclusive and unprecedented" access to Jobs's life. Jobs is said to have encouraged the people interviewed
+            to speak honestly. Although Jobs cooperated with the book, he asked for no control over its content other
+            than the book's cover, and waived the right to read it before it was published.
+          </p>
         </div>
+      </div>
+      <div class="page info odd own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Virsraksts!</h1>
+          <p>
+            Steve Jobs is the authorized biography of Steve Jobs. The biography was written at the request of Jobs by
+            acclaimed biographer Walter Isaacson, a former executive at CNN and Time who has written best-selling
+            biographies about Benjamin Franklin and Albert Einstein.
+          </p>
+          <p>
+            Based on more than forty interviews with Jobs conducted over two years—in addition to interviews with more
+            than one hundred family members, friends, adversaries, competitors, and colleagues—Isaacson was given
+            "exclusive and unprecedented" access to Jobs's life. Jobs is said to have encouraged the people interviewed
+            to speak honestly. Although Jobs cooperated with the book, he asked for no control over its content other
+            than the book's cover, and waived the right to read it before it was published.
+          </p>
+        </div>
+        <style>
+          .gramtas_saturs {
+            margin: 70px 40px !important;
+          }
+        </style>
+      </div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size gramatas_saturs"></div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size gramatas_saturs"></div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size gramatas_saturs"></div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size gramatas_saturs"></div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size gramatas_saturs"></div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size gramatas_saturs"></div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="hard fixed cover back"></div>
+      <div class="hard cover back">
+        Beigas<br /><small>Veidoja: Paula Apsīte</small><br /><small>No 9c.klases</small>
+      </div>
     </div>
-      
 
-
-
-    <!--Izveidota kājene ar lapas izveidotāju-->
-    <!--<footer>
-        <small>Veidoja: Paula Apsīte</small>
-        <br>
-        <small>No 9c.klases</small>
-    </footer>-->
-<script src="jquery.js"></script>
-<script src="turn.min.js"></script>
-<script src="interaction.js"></script>    
-<script>
-    $("#flipbook").turn({
-      width: 960,
-      height: 600,
-      autoCenter: true,
-      display: 'double',
-      hardwareAcceleration: true,
-      when: {
-        turning: function(event, page, view) {
-          console.log("Turning to page", page);
-        }
-      }
-    });
-    </script>    
-</body>
+    <script src="jquery.js"></script>
+    <script src="turn.min.js"></script>
+    <script src="interaction.js"></script>
+    <script>
+      $("#flipbook").turn({
+        width: 960,
+        height: 600,
+        autoCenter: true,
+        display: "double",
+        hardwareAcceleration: true,
+        when: {
+          turning: function (event, page, view) {
+            console.log("Turning to page", page);
+          },
+        },
+      });
+      $(document).on("click", ".saturs a", function (e) {
+        e.preventDefault();
+        var page = $(this).data("page");
+        $("#flipbook").turn("page", page);
+      });
+    </script>
+  </body>
 </html>

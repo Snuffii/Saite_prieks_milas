@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Tiek savienots(linkots) css fails ar html-->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div id="menu_slide">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!--Izveidota navigacija, stilizētā pēc grāmatas-->
+    <div class="book">
+      <!--Tiek ievieti linki uz citiem HTML failiem, stilizēti pēc grāmatas lapām-->
+      <div class="book_page">
+        <a href="../main.html">Sākums</a>
+      </div>
+      <div class="book_page">
+        <a href="#">Autors</a>
+      </div>
+      <div class="book_page">
+        <a href="notikumi.html">Vēstures notikumi</a>
+      </div>
+      <div class="book_page">
+        <a href="gramatas_varoni.html">Romāna Varoņi</a>
+      </div>
+      <div class="book_page">
+        <a href="atzinas.html">Atziņas</a>
+      </div>
+    </div>
+
+    <!--Pievienots elements kurš atbildēs par mājaslapas rakstisko daļu-->
+    <div id="flipbook">
+      <div class="hard cover first">
+        <div class="centrets_teksts">
+          <h1>Svina garša</h1>
+          <h3>Māris Bērziņš</h3>
+        </div>
+        <h6>Par romāna autoru</h6>
+      </div>
+      <div class="hard fixed cover first"></div>
+      <div class="page info odd own-size gramatas_saturs"></div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size saturs">
+        <div class="gramatas_saturs">
+          <h1>Saturs</h1>
+          <hr />
+          <ul>
+            <li>
+              <a href="#" data-page="6"> Pirmā atziņa<span>1</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="7"> Otrā atziņa<span>2</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="8"> Trešā atziņa<span>3</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="11"> Nobeiguma lapa<span>6</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Pirmā atziņa<br /><span>(179.lpp.)</span></h1>
+          <hr />
+          <p class="atzina">
+            “Mēle biežāk spēj būt asa, un, nudien, vēl pirms dusmās teikums pateikts, izjūtu mirklīgu gandarījumu, ka
+            māku tā sāpīgi, nikni iecirst, taču vēlāk… vēlāk vienmēr nācies nožēlot.”
+          </p>
+          <p class="komentars">
+            Šī atziņa uzsver, ka niknuma sajūta mēdz izpausties fiziskā rīcībā pirms cilvēks spēj izteikt savas dusmas
+            ar vārdiem.<br /><br />
+            Līdzīga izjūta radās Matīsam viņa bērnībā, kad Jacis pret viņu izturējās ļoti nepareizi un nepatīkami.
+            Matīsa dusmas uzkrājās, tāpēc bez liekām pārdomām viņš fiziski aizskāra savu draugu, ko vēlāk nožēloja, jo
+            tikai pēc šī notikuma viņš aizdomājās par savu rīcību.
+          </p>
+        </div>
+        <small>1</small>
+      </div>
+      <div class="page info odd own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Otrā atziņa<br /><span>(149. lpp.)</span></h1>
+          <hr />
+          <p class="atzina">
+            “Nesaprotu, kas ar mani notiek, bet naids, cik pirmīt strauji uzliesmojis, tikpat ātri ir atkal apdzisis,
+            pāri palikušas vienīgi skumjas. Bezdievīgas skumjas, kas salīdzinājumā ar naidu neizdeg ātri, bet gruzd ilgi
+            un sūrstoši.”
+          </p>
+          <p class="komentars">
+            Šī atziņa parāda, ka jebkurš liels vai mazs mirklis spēj atstāt dažādas izjūtas uz ilgiem laikiem, ja arī
+            tās nav vēlamas.<br /><br />
+            Šajā citātā Matīss Birkens jūt naidu par to, ka cilvēki tiek ievesti vilcienu vagonos un viņš nespēj to
+            situāciju glābt vai kaut kādā veidā izpalīdzēt. Šīs skumjas viņš piedzīvo ilgu un nepatīkamu periodu, jo
+            tieši tas notikums ir tā brīža lielākā kara problēma.
+          </p>
+        </div>
+        <small>2</small>
+      </div>
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Trešā atziņa<br /><span>(295.lpp.)</span></h1>
+          <hr />
+          <p class="atzina">“Goda vārds, mocīties ar slimību un ciest baudu ir vieglāk nekā tikt galā ar atmiņām.”</p>
+          <p class="komentars">
+            Šī atziņa uzsver, ka atmiņas ir spēcīgas un spēj dzīvot uz ilgu laiku cilvēka smadzenēs. Tās var būt ļoti
+            dažādas, bet nepatīkamākās atmiņas liek cilvēkam mocīties ilgāk nekā ar jebkādām fiziskām sāpēm.
+          </p>
+        </div>
+        <small>3</small>
+      </div>
+      <div class="page info odd own-size gramatas_saturs"></div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size saturs">
+        <div class="gramatas_saturs">
+          <h1>Saturs</h1>
+          <hr />
+          <ul>
+            <li>
+              <a href="#" data-page="5"> Saturs<span>0</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="6"> Pirmā atziņa<span>1</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="7"> Otrā atziņa<span>2</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="8"> Trešā atziņa<span>3</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="hard fixed cover back">
+        Beigas<br /><small>Veidoja: Paula Apsīte</small><br />
+        <small>No 9c.klases</small>
+      </div>
+      <div class="hard cover back"></div>
+    </div>
+
+    <!--Izveidota kājene ar lapas izveidotāju-->
+    <!--<footer>
+        <small>Veidoja: Paula Apsīte</small>
+        <br>
+        <small>No 9c.klases</small>
+    </footer>-->
+    <script src="../jquery.js"></script>
+    <script src="../turn.min.js"></script>
+    <script src="../interaction.js"></script>
+    <script>
+      $("#flipbook").turn({
+        width: 960,
+        height: 600,
+        autoCenter: true,
+        display: "double",
+        hardwareAcceleration: true,
+        when: {
+          turning: function (event, page, view) {
+            console.log("Turning to page", page);
+          },
+        },
+      });
+      $(document).on("click", ".saturs a", function (e) {
+        e.preventDefault();
+        var page = $(this).data("page");
+        $("#flipbook").turn("page", page);
+      });
+    </script>
+  </body>
+</html>
