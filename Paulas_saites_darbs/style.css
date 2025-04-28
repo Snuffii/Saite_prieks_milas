@@ -102,9 +102,11 @@ body {
 }
 
 .book_page {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  margin-top: 5%;
   color: #4b4a4a;
   font-weight: 500;
+  align-items: center;
 }
 
 #flipbook .hard.cover {
@@ -125,13 +127,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+}
+
+#flipbook .hard.cover.first small {
+  font-size: 12px;
+  margin-bottom: 26px;
+  margin-top: 24px;
 }
 
 #flipbook .hard.cover h6 {
-  margin-bottom: 24px;
   font-style: italic;
   align-self: center; /* Atstāj h6 horizontli */
+  font-size: 20px;
 }
 
 #flipbook .page.info {
@@ -234,6 +241,34 @@ body {
   position: absolute;
   margin-top: 500px;
   text-align: center;
+}
+
+#flipbook .page.gramatas_saturs.bilde {
+  display: flex;
+  justify-content: center;
+}
+
+#flipbook .page.gramatas_saturs img {
+  border: solid 2px #f5f5dc;
+  height: 450px;
+  margin-bottom: 70px;
+}
+
+#flipbook .page.gramatas_saturs.instrukcija {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#flipbook .page.gramatas_saturs.instrukcija small {
+  position: relative;
+  margin-top: 500px;
+}
+
+#flipbook .page.gramatas_saturs .memorials {
+  border: solid 2px #f5f5dc;
+  height: 300px;
+  margin-bottom: 70px;
 }
 
 #flipbook .page.gramatas_saturs hr {

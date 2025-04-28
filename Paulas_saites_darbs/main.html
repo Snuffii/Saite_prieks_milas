@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Autors</title>
     <!--Tiek savienots(linkots) css fails ar html-->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -24,102 +24,183 @@
         <a href="Navigacija/notikumi.html">Vēstures notikumi</a>
       </div>
       <div class="book_page">
-        <a href="Navigacija/gramatas_varoni.html">Gramatas Varoņi</a>
+        <a href="Navigacija/gramatas_varoni.html">Romāna Varoņi</a>
       </div>
       <div class="book_page">
         <a href="Navigacija/atzinas.html">Atziņas</a>
+      </div>
+      <div class="book_page">
+        <a href="Navigacija/bildes.html">Bildes</a>
       </div>
     </div>
 
     <!--Pievienots elements kurš atbildēs par mājaslapas rakstisko daļu-->
     <div id="flipbook">
       <div class="hard cover first">
-        <h1>Svina garša</h1>
-        <h3>Māris Bērziņš</h3>
-        <h1>Vajag ierakstit to, ka graamata ir jaatver</h1>
+        <div class="centrets_teksts">
+          <h1>Svina garša</h1>
+          <h3>Māris Bērziņš</h3>
+        </div>
+        <h6>Par grāmatas autoru</h6>
+
+        <small>Uzklikšķiniet vai paraujiet labo grāmatas apmali<br />lai atvert grāmatu.</small>
       </div>
       <div class="hard fixed cover first"></div>
+      <div class="page info odd own-size gramatas_saturs instrukcija">
+        <small> Uzklikšķiniet vai paraujiet labo augšējo vai labo apakšējo lapaspuses stūri lai pāršķirt uz nākamo lapaspusi. </small>
+      </div>
+      <div class="page info even own-size gramatas_saturs"></div>
       <div class="page info odd own-size saturs">
         <div class="gramatas_saturs">
           <h1>Saturs</h1>
           <hr />
           <ul>
             <li>
-              <a href="#" data-page="4"> Viens<span>1</span></a>
+              <a href="#" data-page="6"> Apraksts<span>1</span></a>
             </li>
             <li>
-              <a href="#" data-page="6"> Divi <span>2</span></a>
+              <a href="#" data-page="8"> Fakti<span>3</span></a>
             </li>
             <li>
-              <a href="#" data-page="8"> Tris <span>3</span></a>
+              <a href="#" data-page="9"> Izglītība<span>4</span></a>
             </li>
             <li>
-              <a href="#" data-page="10"> Cetri <span>4</span></a>
+              <a href="#" data-page="10"> Darbavieta<span>5</span></a>
             </li>
             <li>
-              <a href="#" data-page="12"> Pieci <span>5</span></a>
+              <a href="#" data-page="11"> Apbalvojumi<span>6</span></a>
             </li>
             <li>
-              <a href="#" data-page="14"> Sesi <span>6</span></a>
+              <a href="#" data-page="12"> Nobeiguma lapa<span>8</span></a>
             </li>
           </ul>
         </div>
       </div>
       <div class="page info even own-size gramatas_saturs">
         <div class="gramatas_saturs">
-          <h1>JAIZVEIDO BILDE PRIEKS COVERIEM AR SHADOWIEM!!!</h1>
-          <p>
-            Steve Jobs is the authorized biography of Steve Jobs. The biography was written at the request of Jobs by
-            acclaimed biographer Walter Isaacson, a former executive at CNN and Time who has written best-selling
-            biographies about Benjamin Franklin and Albert Einstein.
-          </p>
-          <p>
-            Based on more than forty interviews with Jobs conducted over two years—in addition to interviews with more
-            than one hundred family members, friends, adversaries, competitors, and colleagues—Isaacson was given
-            "exclusive and unprecedented" access to Jobs's life. Jobs is said to have encouraged the people interviewed
-            to speak honestly. Although Jobs cooperated with the book, he asked for no control over its content other
-            than the book's cover, and waived the right to read it before it was published.
+          <h1>Māris Bērziņš</h1>
+
+          <hr />
+
+          <p class="atzina">
+            Māris Bērziņš - rakstnieks, sešu romānu, vairāku īsprozas un lugu krājumu autors. Sarakstījis romānu "Svina garša", par ko saņēmis plašu
+            atzinību un vairākas godalgas, tostarp Dzintara Soduma balvu par novatorismu literatūrā un Baltijas Asamblejas balvu. Grāmatu sērijas "Es
+            esmu..." ietvaros sarakstījis romānu "Nākotnes kalējs" par rakstnieku, Latvijas PSR Tautas komisāru padomes, Latvijas PSR Ministru Padomes
+            un PSRS Augstākās Padomes Tautību padomes priekšsēdētāju Vili Lāci.
           </p>
         </div>
+        <p class="info_avots">Informācijas avots:<br />literatura.lv</p>
+        <small>1</small>
       </div>
+
+      <div class="page info odd own-size gramatas_saturs bilde">
+        <div class="gramatas_saturs">
+          <img src="Bildes/Māris_Bērziņš.jpg" alt="Māris Bērziņš" />
+        </div>
+        <p class="info_avots">Bildes avots:<br />literatura.lv</p>
+        <small>2</small>
+      </div>
+
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Dzimšanas laiks/vieta:<br /><span>Dzimis 1962. gada 7. decembrī, Torņkalnā.</span></h1>
+
+          <hr />
+
+          <h1>Pseidonīms:<br /><span>Māra Bērziņa pseidonīms ir “gūtenmorgens”.</span></h1>
+
+          <hr />
+
+          <h1>Dalība organizācijās:<br /><span> 2007. gadā Māris Bērziņš bija kā biedrs Latvijas Rakstnieku savienībā. </span></h1>
+        </div>
+        <small>3</small>
+      </div>
+
       <div class="page info odd own-size gramatas_saturs">
         <div class="gramatas_saturs">
-          <h1>Virsraksts!</h1>
-          <p>
-            Steve Jobs is the authorized biography of Steve Jobs. The biography was written at the request of Jobs by
-            acclaimed biographer Walter Isaacson, a former executive at CNN and Time who has written best-selling
-            biographies about Benjamin Franklin and Albert Einstein.
-          </p>
-          <p>
-            Based on more than forty interviews with Jobs conducted over two years—in addition to interviews with more
-            than one hundred family members, friends, adversaries, competitors, and colleagues—Isaacson was given
-            "exclusive and unprecedented" access to Jobs's life. Jobs is said to have encouraged the people interviewed
-            to speak honestly. Although Jobs cooperated with the book, he asked for no control over its content other
-            than the book's cover, and waived the right to read it before it was published.
+          <h1>Izglītība:</h1>
+
+          <hr />
+
+          <p class="atzina">
+            <b>1970.-1978.</b> gadam mācījies Rīgas 59. vidusskolā.<br /><br />
+            <b>1978.-1981.</b> gadam Rīgas Tirdzniecības tehnikumā ieguvis sabiedriskās ēdināšanas tehnologa diplomu.<br /><br />
+            <b>1985.-1990.</b> gadam mācījies Pētera Stučkas Latvijas Valsts universitātē, ekonomikas fakultātē.<br /><br />
           </p>
         </div>
-        <style>
-          .gramtas_saturs {
-            margin: 70px 40px !important;
-          }
-        </style>
+        <p class="info_avots">Informācijas avots:<br />literatura.lv</p>
+        <small>4</small>
       </div>
+
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Darbavieta:</h1>
+
+          <hr />
+
+          <p class="atzina">
+            <b>1978.-1981.</b> gadam strādājis par pavāru dažādos uzņēmumos.<br /><br />
+            <b>1983.-1989.</b> gadam bijis tirdzniecības inspektors, meteorologs, sporta metodiķis, prečzinis un krāsotājs.<br /><br />
+            <b>1989.-1993.</b> gadā bija ekonomists privātos uzņēmumos.<br /><br />
+            <b>1998.-2001.</b> gadam Valsts Kultūrkapitāla fondā bija direktors.<br /><br />
+            <b>2001.-2007.</b> gadam strādājis kā Rīgas pilsētas sabiedrisko pakalpojumu regulatora priekšsēdētājs.<br /><br />
+          </p>
+        </div>
+        <small>5</small>
+      </div>
+
+      <div class="page info odd own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Apbalvojumi:</h1>
+
+          <hr />
+
+          <p class="atzina">
+            <b>2010.gadā</b> Latvijas Literatūras gada balva, iztēlojies: trīs lugas, piešķirta par lugu krājumu “Iztēlojies”.<br /><br />
+            <b>2011.gadā</b> Egona Līva piemiņas balvas "Krasta ļaudis" diploms par "Literāro veikumu" piešķirts par romānu "Titāna skrūves".<br /><br />
+            <b>Romāns "Svina garša"</b> iznāca 2015. gadā sērijā "Mēs. Latvija, XX gadsimts" un kļuvis par vienu no pēdējo gadu atzītākajiem latviešu
+            prozas darbiem. Par romānu Māris Bērziņš 2015. gadā ieguva Dzintara Soduma balvu, kā arī Latvijas Literatūras gada balvu. 2016. gadā
+            režisors Valters Sīlis uzveda romānu uz Nacionālā teātra skatuves.<br /><br />
+          </p>
+        </div>
+        <small>6</small>
+      </div>
+
       <div class="page info even own-size gramatas_saturs"></div>
-      <div class="page info odd own-size gramatas_saturs"></div>
-      <div class="page info even own-size gramatas_saturs"></div>
-      <div class="page info odd own-size gramatas_saturs"></div>
-      <div class="page info even own-size gramatas_saturs"></div>
-      <div class="page info odd own-size gramatas_saturs"></div>
-      <div class="page info even own-size gramatas_saturs"></div>
-      <div class="page info odd own-size gramatas_saturs"></div>
-      <div class="page info even own-size gramatas_saturs"></div>
-      <div class="page info odd own-size gramatas_saturs"></div>
-      <div class="page info even own-size gramatas_saturs"></div>
-      <div class="page info odd own-size gramatas_saturs"></div>
+      <div class="page info odd own-size saturs">
+        <div class="gramatas_saturs">
+          <h1>Saturs</h1>
+          <hr />
+          <ul>
+            <li>
+              <a href="#" data-page="5"> Saturs<span>0</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="6"> Apraksts<span>1</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="8"> Fakti<span>3</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="9"> Izglītība<span>4</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="10"> Darbavieta<span>5</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="11"> Apbalvojumi<span>6</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="page info even own-size gramatas_saturs"></div>
       <div class="hard fixed cover back"></div>
       <div class="hard cover back">
-        Beigas<br /><small>Veidoja: Paula Apsīte</small><br /><small>No 9c.klases</small>
+        <footer>
+          <small> Veidoja: Paula Apsīte<br />Līva Liepiņa<br />Adrija Supronoviča </small><br />
+          <hr />
+          <small>No 9c.klases</small>
+        </footer>
       </div>
     </div>
 
