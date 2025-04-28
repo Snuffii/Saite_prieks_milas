@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grāmatas varoņi</title>
+    <!--Tiek savienots(linkots) css fails ar html-->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div id="menu_slide">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!--Izveidota navigacija, stilizētā pēc grāmatas-->
+    <div class="book">
+      <!--Tiek ievieti linki uz citiem HTML failiem, stilizēti pēc grāmatas lapām-->
+      <div class="book_page">
+        <a href="../main.html">Sākums</a>
+      </div>
+      <div class="book_page">
+        <a href="#">Autors</a>
+      </div>
+      <div class="book_page">
+        <a href="notikumi.html">Vēstures notikumi</a>
+      </div>
+      <div class="book_page">
+        <a href="atzinas.html">Atziņas</a>
+      </div>
+      <div class="book_page">
+        <a href="bildes.html">Bildes</a>
+      </div>
+    </div>
+
+    <!--Pievienots elements kurš atbildēs par mājaslapas rakstisko daļu-->
+    <div id="flipbook">
+      <div class="hard cover first">
+        <div class="centrets_teksts">
+          <h1>Svina garša</h1>
+          <h3>Māris Bērziņš</h3>
+        </div>
+        <h6>Apraksts par romāna varoņiem</h6>
+
+        <small>Uzklikšķiniet vai paraujiet labo grāmatas apmali<br />lai atvert grāmatu.</small>
+      </div>
+      <div class="hard fixed cover first"></div>
+      <div class="page info odd own-size gramatas_saturs"></div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size saturs">
+        <div class="gramatas_saturs">
+          <h1>Saturs</h1>
+          <hr />
+          <ul>
+            <li>
+              <a href="#" data-page="6"> Tamāra<span>1 - 2</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="8"> Nikolajs<span>3 - 4</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="10"> Matīss<span>5</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="11"> Rūdis<span>6</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="12"> Nobeiguma lapa<span>8</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Tamāra<br /><span>(126.lpp.)</span></h1>
+
+          <hr />
+
+          <p class="atzina">
+            “Ļoti glīta tumšmate, liekas, viņai jābūt diezgan temperamentīgai, bet Tamāra izturas klusi kā apstājies pulkstenis, ierāvusies sevī, un
+            nevienam no puišiem nerodas ne mazākās vēlmes viņu uzrunāt vai kā citādi izrādīt uzmanību.”
+          </p>
+          <p class="komentars">
+            Tamāra ir skaista no ārpuses, bet aizvērta iekšpusē, tāpēc daudz nekomunicē ar citiem. Agrāk kopā ar Sulamīti strādāja slimnīcā, tādēļ
+            Matīss viņu pazina tikai kā Sulamītes draudzeni.
+          </p>
+        </div>
+        <small>1</small>
+      </div>
+
+      <div class="page info odd own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Tamāra<br /><span>(182.lpp.)</span></h1>
+
+          <hr />
+
+          <p class="atzina">
+            “Pieķeru sevi gaidām Tamāras ierašanos. Kad viņa ir tuvumā, jūtos patīkami. Viņa nav klusa pelīte, bet arī neburbuļo bez jēgas.
+            Asprātīgāka nekā citas? Noteikti. Skaista? Jā, bet viņas smukums ir citādāks nekā Sulamītei vai, dievs nedod, Hermīnei. Tamārai acis ir
+            skaistākas. Dzidrākas, dziļākas.”
+          </p>
+          <p class="komentars">
+            Kad Matīss ar Tamāru jau ir izveidojuši attiecības, tad Tamāras rakstura īpašības ir pavisam savādākas. Viņa ir rūpīga un patīkami stingra
+            pret Matīsu, jo slimnīcā Tamārai vajadzēja par viņu gādāt. Matīss uzskata, ka Tamāra, starp Sulamīti un Hermīni, ir visskaistākā un
+            visasprātīgākā.
+          </p>
+        </div>
+        <small>2</small>
+      </div>
+
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Nikolajs Brīskorns<br /><span>(9. lpp.)</span></h1>
+
+          <hr />
+
+          <p class="komentars">
+            Nikolaju Brīskornu mēdza saukt par Niku, bet viņam pašam labāk patīk Koļa. Viņš ir Matīsa mammas pusbrālis, kā arī Matīsa tēvocis. Koļa ir
+            vīrietis, kuram jau drīz varētu teikt, ka būs “vīrs pusmūžā”, jo ir 41 gadu vecs. Viņš pēc rakstura ir pašpārliecināts un nosvērts
+            cilvēks.
+          </p>
+
+          <p class="atzina">“Tu strādā kopā ar mani, nevis pie manis. Tā ir milzīga atšķirība. Saproti?”</p>
+
+          <p class="komentars">
+            Matīss bija krāsotājs un strādāja pie sava tēvoča. Koļa bija priekšnieks krāsotāju darbos, taču Matīsu uzskatīja par savu kolēģi un
+            draugu, nevis zemāku personu.
+          </p>
+        </div>
+        <small>3</small>
+      </div>
+
+      <div class="page info odd own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Nikolajs Brīskorns<br /><span>(35.lpp.)</span></h1>
+
+          <hr />
+
+          <p class="atzina">
+            “Kur lai es tās rokas tagad bāžu? Nekad neienāktu prātā Gustam nodarīt pāri, bet, redz, tā dzīvot gribējās, ka nožmiedzu draugu kā tādu
+            nieka tibiņu. Kopš tā brīža liekas, labāk es viņa vietā būtu miris, man būtu daudz, daudz vieglāk.”
+          </p>
+
+          <p class="komentars">
+            Koļam uz pleciem sēž viens ļoti nepatīkams grēks. Vairākus gadus atpakaļ viņš saskārās ar dzīves vai nāves situāciju, taču no tās viņš
+            izkļuva ārā, bet ar ļoti nepatīkamām atmiņām. Vairākus gadus atpakaļ viņš, tajā brīdī neiedomājoties par sekām, nogalināja savu
+            skolasbiedru Gustu. Šo notikumu Koļa vēlas aizmirst un izlīdzēt, katru dienu palīdzot Gusta mātei, Alvīnei, dažādos darbos, lai viņa
+            nenojauš, ka viņas dēlu nogalināja Koļa.
+          </p>
+        </div>
+        <small>4</small>
+      </div>
+
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Matīss Birkens</h1>
+
+          <hr />
+
+          <p class="komentars">
+            Matīss Birkens ir divdesmit trīs gadus vecs jauneklis, kurš dzīvo Torņakalnā un strādā par krāsotāju. Viņam ir dziļa iekšējā pasaule. Viņš
+            ir jūtīgs, iejūtīgs un ar izteiktu humora izjūtu, kas palīdz viņam tikt galā ar dzīves grūtībām.
+          </p>
+          <p class="komentars">
+            Matīss ir cilvēks ar dziļu iekšējo pasauli, kurā dominē humānisms un cieņa pret dzīvību. Viņš atsakās piedalīties vardarbīgās aktivitātēs,
+            piemēram, cīkstēšanās ringā, jo izjūt riebumu pret vardarbību.Viņš ir uzticams draugs, jo kopā ar Rūdi piedalās riskantās misijās, lai
+            palīdzētu citiem, piemēram, glābjot ebrejus.
+          </p>
+          <p class="komentars">
+            Matīss ir cilvēks, kuram literatūra ir svarīga dzīves sastāvdaļa. Viņš ir kritiski domājošs, jo apšauba propagandu, autoritātes un
+            sabiedrības nostāju, taču vienlaikus viņš nav aktīvs pretošanās dalībnieks.
+          </p>
+        </div>
+        <small>5</small>
+      </div>
+
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Rūdis</h1>
+
+          <hr />
+
+          <p class="atzina">
+            <b>Drosmīgs un izlēmīgs</b> - Rūdis ir aktīvāks un asāks nekā Matīss. Viņš nebaidās iesaistīties bīstamās situācijās un viņam ir izteikta
+            taisnīguma izjūta.
+          </p>
+          <p class="komentars">
+            <b>Lojāls un uzticams draugs</b> - Rūdis vienmēr stāv Matīsam blakus. Viņu draudzība balstās uz savstarpēju uzticību un kopīgi pārdzīvotu
+            pieredzi. Viņš nav vienaldzīgs pret netaisnību un pat apdraudot sevi, cenšas palīdzēt citiem, piemēram, glābjot ebrejus vai vāciešiem
+            nežēlīgi vajātos cilvēkus.
+          </p>
+        </div>
+        <small>6</small>
+      </div>
+
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size saturs">
+        <div class="gramatas_saturs">
+          <h1>Saturs</h1>
+          <hr />
+          <ul>
+            <li>
+              <a href="#" data-page="5"> Saturs<span>0</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="6"> Tamāra<span>1 - 2</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="8"> Nikolajs<span>2 - 3</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="10"> Matīss<span>5</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="11"> Rūdis<span>6</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="hard fixed cover back"></div>
+      <div class="hard cover back">
+        <footer>
+          <small> Veidoja: Paula Apsīte<br />Līva Liepiņa<br />Adrija Supronoviča </small><br />
+          <hr />
+          <small>9.c klases</small>
+        </footer>
+      </div>
+    </div>
+
+    <script src="../jquery.js"></script>
+    <script src="../turn.min.js"></script>
+    <script src="../interaction.js"></script>
+    <script>
+      $("#flipbook").turn({
+        width: 960,
+        height: 600,
+        autoCenter: true,
+        display: "double",
+        hardwareAcceleration: true,
+        when: {
+          turning: function (event, page, view) {
+            console.log("Turning to page", page);
+          },
+        },
+      });
+      $(document).on("click", ".saturs a", function (e) {
+        e.preventDefault();
+        var page = $(this).data("page");
+        $("#flipbook").turn("page", page);
+      });
+    </script>
+  </body>
+</html>

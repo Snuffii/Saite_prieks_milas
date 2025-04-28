@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notikumi</title>
+    <!--Tiek savienots(linkots) css fails ar html-->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div id="menu_slide">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!--Izveidota navigacija, stilizētā pēc grāmatas-->
+    <div class="book">
+      <!--Tiek ievieti linki uz citiem HTML failiem, stilizēti pēc grāmatas lapām-->
+      <div class="book_page">
+        <a href="../main.html">Sākums</a>
+      </div>
+      <div class="book_page">
+        <a href="#">Autors</a>
+      </div>
+      <div class="book_page">
+        <a href="gramatas_varoni.html">Romāna Varoņi</a>
+      </div>
+      <div class="book_page">
+        <a href="atzinas.html">Atziņas</a>
+      </div>
+      <div class="book_page">
+        <a href="bildes.html">Bildes</a>
+      </div>
+    </div>
+
+    <!--Pievienots elements kurš atbildēs par mājaslapas rakstisko daļu-->
+    <div id="flipbook">
+      <div class="hard cover first">
+        <div class="centrets_teksts">
+          <h1>Svina garša</h1>
+          <h3>Māris Bērziņš</h3>
+        </div>
+        <h6>Vēstures notikumi</h6>
+
+        <small>Uzklikšķiniet vai paraujiet labo grāmatas apmali<br />lai atvert grāmatu.</small>
+      </div>
+      <div class="hard fixed cover first"></div>
+      <div class="page info odd own-size gramatas_saturs"></div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size saturs">
+        <div class="gramatas_saturs">
+          <h1>Saturs</h1>
+          <hr />
+          <ul>
+            <li>
+              <a href="#" data-page="6"> Pirmais notikums<span>1</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="7"> Otrais notikums<span>2</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="8"> Trešais notikums<span>3</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="9"> Ceturtais notikums<span>4</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="10"> Piektais notikums<span>5</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="11"> Sestais notikums<span>6</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="12"> Septītais notikums<span>7</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="15"> Nobeiguma lapa<span>10</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Pirmā Padomju okupācija<br /><span>40. - 41.gads</span></h1>
+
+          <hr />
+
+          <p class="atzina">
+            39. gadā PSRS izveidoja savas kara bāzes Latvijā, sakot, ka, ja uzbruks vāci, PSRS palīdzēs Latvijai ( gudra stratēģija ). 40. gadā PSRS
+            pateicoties savām kara bāzēm Latvijā spēja to okupēt. Latvijai nebija izvēles kā tikai pakļauties.
+          </p>
+        </div>
+        <p class="info_avots">Informācijas avots:<br />( Nacionālā enciklopēdija )</p>
+        <small>1</small>
+      </div>
+
+      <div class="page info odd own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Masveidu ebreju slepkavības Rumbulā<br /><span>41.gads 30.novembris un 8.decembris</span></h1>
+
+          <hr />
+
+          <p class="atzina">Rumbulā tika nošauti 25000 Rīgas geto ieslodzīto cilvēku un 1000 no Vācijas atvesto ebreju.</p>
+        </div>
+        <p class="info_avots">Informācijas avots:<br />( Latvijas Okupācijas muzejs )</p>
+        <small>2</small>
+      </div>
+
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Pirmā deportācija<br /><span>41.gada 14.jūnijs</span></h1>
+
+          <hr />
+
+          <p class="atzina">
+            Akcijas mērķis bija salauzt jebkādu pretošanos padomju okupācijai. To centās panākt, nevis vēršoties pret konkrētiem padomju okupācijas
+            režīma pretiniekiem, bet pēc formāliem kritērijiem (sociālā piederība, agrākā politiskā un profesionālā darbība u. c.) neitralizējot
+            veselas sociālās grupas, kas tika uzskatītas par potenciāli naidīgām un nevēlamām padomju okupācijas varai.
+          </p>
+        </div>
+        <p class="info_avots">Informācijas avots:<br />(Nacionālā enciklopēdija )</p>
+        <small>3</small>
+      </div>
+
+      <div class="page info odd own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Lielais geto<br /><span>41.gada 13.augusts</span></h1>
+
+          <hr />
+
+          <p class="atzina">
+            Lielais geto bija īpaši norobežota teritorija Rīgā Otrā pasaules kara laikā, kurā nacistiskās Vācijas okupācijas vara piespieda dzīvot
+            Latvijas ebrejus.
+          </p>
+        </div>
+        <p class="info_avots">Informācijas avots:<br />( Latvijas Okupācijas muzejs )<br />( Muzejs Ebreji Latvijā)</p>
+        <small>4</small>
+      </div>
+
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Arāja banda</h1>
+
+          <hr />
+
+          <p class="atzina">
+            Tā bija viena no galvenajām vienībām, kas piedalījās ebreju iznīcināšanā. Līderis - Viktors Arājs. Dedzināja sinagogas.
+          </p>
+        </div>
+        <p class="info_avots">Informācijas avots:<br />( Nacionālā enciklopēdija )<br />( Muzejs Ebreji Latvijā )</p>
+        <small>5</small>
+      </div>
+
+      <div class="page info odd own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Vācu okupācija<br /><span>41.gada jūlijs</span></h1>
+
+          <hr />
+
+          <p class="atzina">
+            Nacistiskās Vācijas karaspēks 22.06.1941. bez kara pieteikšanas uzbruka PSRS un četros naktī vācu aviācija bombardēja Latvijas teritoriju
+            - Liepāju un Ventspili. Vērmahts strauji virzījās uz priekšu un jau 01.07. iekaroja Rīgu. Pilnībā Liepāju vāciešiem izdevās iekarot
+            29.06., bet visu Latviju 08.07.
+          </p>
+        </div>
+        <p class="info_avots">Informācijas avots:<br />( Nacionālā enciklopēdija )</p>
+        <small>6</small>
+      </div>
+
+      <div class="page info even own-size gramatas_saturs">
+        <div class="gramatas_saturs">
+          <h1>Ebreju slepkavības Biķerniekos</h1>
+
+          <hr />
+
+          <p class="atzina">
+            Biķernieku mežā atrodas vislielākā masu iznīcināšanas un nacistiskā terora upuru apbedīšanas vieta Latvijā. Laika posmā no 1941. līdz
+            1944. gadam šeit tika nogalināti aptuveni 35 tūkstoši cilvēku, kuru vidū bija arī Latvijas un citu Rietumeiropas valstu ebreji, padomju
+            karagūstekņi un nacistiskā režīma pretinieki.Biķernieku meža grāvji kļuva par atdusas vietu aptuveni 20 tūkstošiem ebreju.
+          </p>
+        </div>
+        <p class="info_avots">Informācijas avots:<br />( Latvijas Ebreju kopiena )</p>
+        <small>7</small>
+      </div>
+
+      <div class="page info odd own-size saturs"></div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="page info odd own-size saturs">
+        <div class="gramatas_saturs">
+          <h1>Saturs</h1>
+          <hr />
+          <ul>
+            <li>
+              <a href="#" data-page="5"> Saturs<span>0</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="6"> Pirmais notikums<span>1</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="7"> Otrais notikums<span>2</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="8"> Trešais notikums<span>3</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="9"> Ceturtais notikums<span>4</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="10"> Piektais notikums<span>5</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="11"> Sestais notikums<span>6</span></a>
+            </li>
+            <li>
+              <a href="#" data-page="12"> Septītais notikums<span>7</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page info even own-size gramatas_saturs"></div>
+      <div class="hard fixed cover back"></div>
+      <div class="hard cover back">
+        <footer>
+          <small> Veidoja: Paula Apsīte<br />Līva Liepiņa<br />Adrija Supronoviča </small><br />
+          <hr />
+          <small>9.c klases</small>
+        </footer>
+      </div>
+    </div>
+
+    <script src="../jquery.js"></script>
+    <script src="../turn.min.js"></script>
+    <script src="../interaction.js"></script>
+    <script>
+      $("#flipbook").turn({
+        width: 960,
+        height: 600,
+        autoCenter: true,
+        display: "double",
+        hardwareAcceleration: true,
+        when: {
+          turning: function (event, page, view) {
+            console.log("Turning to page", page);
+          },
+        },
+      });
+      $(document).on("click", ".saturs a", function (e) {
+        e.preventDefault();
+        var page = $(this).data("page");
+        $("#flipbook").turn("page", page);
+      });
+    </script>
+  </body>
+</html>
