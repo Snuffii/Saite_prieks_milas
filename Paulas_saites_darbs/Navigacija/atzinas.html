@@ -14,14 +14,14 @@
       <span></span>
     </div>
 
-    <!--Izveidota navigacija, stilizētā pēc grāmatas-->
+    <!--Navigācija ir līdzīga kā main.html, bet tikai šajā navigācijā nav pašas Atzinas.html un pārējos navigācijas html failos ir līdzīga noteikta struktūra-->
     <div class="book">
-      <!--Tiek ievieti linki uz citiem HTML failiem, stilizēti pēc grāmatas lapām-->
+      <!--Navigācijas linki kā main.html-->
       <div class="book_page">
         <a href="../main.html">Sākums</a>
       </div>
       <div class="book_page">
-        <a href="#">Autors</a>
+        <a href="autors.html">Autors</a>
       </div>
       <div class="book_page">
         <a href="notikumi.html">Vēstures notikumi</a>
@@ -85,7 +85,7 @@
       </div>
       <div class="page info even own-size gramatas_saturs">
         <div class="gramatas_saturs">
-          <h1>Pirmā atziņa<br /><span>(179.lpp. Līvas atziņa)</span></h1>
+          <h1>Pirmā atziņa<br /><span>(179.lpp. Adrijas atziņa)</span></h1>
 
           <hr />
 
@@ -103,7 +103,7 @@
       </div>
       <div class="page info odd own-size gramatas_saturs">
         <div class="gramatas_saturs">
-          <h1>Otrā atziņa<br /><span>(149. lpp. Līvas atziņa)</span></h1>
+          <h1>Otrā atziņa<br /><span>(149. lpp. Adrijas atziņa)</span></h1>
 
           <hr />
 
@@ -121,7 +121,7 @@
       </div>
       <div class="page info even own-size gramatas_saturs">
         <div class="gramatas_saturs">
-          <h1>Trešā atziņa<br /><span>(295.lpp. Līvas atziņa)</span></h1>
+          <h1>Trešā atziņa<br /><span>(295.lpp. Adrijas atziņa)</span></h1>
 
           <hr />
 
@@ -261,6 +261,8 @@
     <script src="../jquery.js"></script>
     <script src="../turn.min.js"></script>
     <script src="../interaction.js"></script>
+
+    <!--Tāds pats kods, kas ir main.html lai inicalizētu grāmatu ar turn.js palīdzību-->
     <script>
       $("#flipbook").turn({
         width: 960,

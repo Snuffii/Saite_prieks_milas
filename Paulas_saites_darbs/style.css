@@ -1,12 +1,15 @@
+/* importēti divi šrifti*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+/*Maina visu elementu iestatījumus, šie iestatījumi ir obligāti priekš pareizas turn.js strādāšanas*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*Pievieno fontus visiem teikumiem, kaa arii nosaka burtu leilumu(treknumu)*/
 body {
   font-family: "PT Serif", serif;
   color: #f5f5dc;
@@ -19,11 +22,13 @@ body {
   overflow: hidden;
 }
 
+/*Novieto navigāciju noteiktā vietā un arī padara navigaciju pašstāvīgu, tā neietekmē un netiek ietekmēta no citiem elementiem*/
 #menu_slide {
   height: 50px;
   width: 50px;
   position: absolute;
 }
+/*Stilizē trīs līnijas, kas atbilst par navigacijas izlaišanu pēc uzspiešanas*/
 #menu_slide span {
   height: 5px;
   width: 70%;
@@ -35,6 +40,7 @@ body {
   transform: translate(-50%, -50%);
   transition: 0.4s ease;
 }
+/*Novieto katru no līnijām savā pozīcijā*/
 #menu_slide span:nth-child(1) {
   top: 25%;
 }
@@ -42,6 +48,7 @@ body {
   top: 75%;
 }
 
+/*Kad uzspiež uz navigācijas pogas, tad līnijas pārvietojas un veido krustu*/
 #menu_slide.active span:nth-child(1) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
@@ -54,7 +61,7 @@ body {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/*Pievinota navigacija*/
+/*Stilizē pašu navigācijas lapu*/
 .book {
   background: #bfc4ac;
 
@@ -84,10 +91,12 @@ body {
   z-index: 1;
 }
 
+/*Tiek veidota izspēlēta animācija, kad navigacijas lapa kļūst redzama*/
 .book.visible {
   transform: translate3d(0vw, 0, 0);
 }
 
+/*Stilizē navigācijas hiperlinkus*/
 .book_page a {
   text-decoration: none;
   color: inherit;
@@ -95,12 +104,14 @@ body {
   text-decoration-color: transparent;
 }
 
+/*Stilizē navigacijas hiperlinkus, kad uz tiem pārvel ar kursoru*/
 .book_page a:hover {
   color: black;
   text-decoration-color: black;
   transition: text-decoration-color 0.5s;
 }
 
+/*Stilizē ārpusējo daļu linkiem un to atrašanās vietu navigācijā*/
 .book_page {
   margin-bottom: 5%;
   margin-top: 5%;
@@ -109,6 +120,7 @@ body {
   align-items: center;
 }
 
+/*Stilizē galvenās grāmatas vāku*/
 #flipbook .hard.cover {
   background: linear-gradient(to bottom left, #344e41, #375441);
   color: #f5f5dc;
@@ -121,6 +133,7 @@ body {
   text-align: center;
 }
 
+/*Stilizē grāmatas noteikto vāka tekstu, kuram ir jābūt centrētam*/
 #flipbook .hard.cover .centrets_teksts {
   flex: 1;
   display: flex;
@@ -129,18 +142,21 @@ body {
   align-items: center;
 }
 
+/*Stilizē grāmatas vāka mazāko tekstu*/
 #flipbook .hard.cover.first small {
   font-size: 12px;
   margin-bottom: 26px;
   margin-top: 24px;
 }
 
+/*Stilizē grāmatas vāka mazāko virsrakstu*/
 #flipbook .hard.cover h6 {
   font-style: italic;
   align-self: center; /* Atstāj h6 horizontli */
   font-size: 20px;
 }
 
+/*Stilizē grāmatas iekšējās informācijas lapaspuses*/
 #flipbook .page.info {
   display: flex;
   flex-direction: column;
@@ -184,26 +200,13 @@ body {
   margin-right: 10px;
 }
 
+/*Stilizē lapaspuses hiperlinkus, kad uz tiem pārvel ar kursoru*/
 #flipbook .page.saturs li a:hover {
   color: #f5f5dc;
   text-decoration-color: #f5f5dc;
+  /*animācija, kad ar kursoru pārvel pāri hiperlinkam*/
   transition: text-decoration-color 0.5s;
-}
-
-#flipbook .page.saturs li a:hover {
   background: #263e2e;
-}
-
-#flipbook .page .info .ievada_teksts * {
-  display: flex;
-  justify-content: center;
-  font-size: 1.1em;
-  color: #f5f5dc;
-  vertical-align: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
 }
 
 #flipbook .page.gramatas_saturs p {
@@ -286,17 +289,20 @@ body {
   width: 460px;
 }
 
+/*Iedod pāra lapaspusēm noteikto gradientu un noapaļotās malas*/
 .page.info.even {
   background: linear-gradient(to right, #496e4c 95%, #3a5a40 100%);
   border-top-right-radius: 80px 5px;
   border-bottom-right-radius: 80px 5px;
 }
+/*Iedod nepāra lapaspusēm noteikto gradientu un noapaļotās malas*/
 .page.info.odd {
   background: linear-gradient(to left, #496e4c 95%, #3a5a40 100%);
   border-top-left-radius: 80px 5px;
   border-bottom-left-radius: 80px 5px;
 }
 
+/*Stilizē pseudosaturu, kas ir neeksistējoš elements html failā, bet redzams ar CSS palīdzību, šīs izveido grāmatas šuvumu*/
 #flipbook .hard.cover.first::after,
 #flipbook .hard.cover.back::after {
   content: "";
@@ -308,12 +314,12 @@ body {
 }
 
 #flipbook .hard.cover.back::after {
-  left: 0; /* Spine on the left side of front cover */
+  left: 0;
   border-right: 1px solid #344e41;
 }
 
 #flipbook .hard.cover.first::after {
-  right: 0; /* Spine on the right side of back cover */
+  right: 0;
   border-left: 1px solid #344e41;
 }
 

@@ -37,21 +37,25 @@
 
     <!--Galvenās grāmatas id-->
     <div id="flipbook">
-      <!--Priekš turn.js bibliotēkas, tiek aprakstītas klases (hard, cover, fixed, odd, even, page)-->
+      <!--Tiek veidota grāmatas sākuma struktūra(grāmatas vāki). Priekš turn.js bibliotēkas, tiek aprakstītas klases (hard, cover, fixed, odd, even, page, un ir vel citas klases)-->
       <div class="hard cover first">
+        <!--Šīs ir div, kurā atrodas teksts kuram vajadzētu atrasties centrā lai ārpusējais h6 varētu viegli atrasties lapaspuses apakšā-->
         <div class="centrets_teksts">
           <h1>Svina garša</h1>
           <h3>Māris Bērziņš</h3>
         </div>
         <h6>Par grāmatas autoru</h6>
 
-        <small>Uzklikšķiniet vai paraujiet labo grāmatas apmali<br />lai atvert grāmatu.</small>
+        <small>Uzklikšķiniet vai paraujiet labo grāmatas vāka apmali<br />lai atvert grāmatu.</small>
       </div>
       <div class="hard fixed cover first"></div>
+
+      <!--Tiek veidota pašas grāmatas struktūra grāmatas iekšējās lapas-->
       <div class="page info odd own-size gramatas_saturs instrukcija">
         <small> Uzklikšķiniet vai paraujiet labo augšējo vai labo apakšējo lapaspuses stūri lai pāršķirt uz nākamo lapaspusi. </small>
       </div>
       <div class="page info even own-size gramatas_saturs"></div>
+      <!--grāmatas iekšējais interaktīvais saturs kurš tika veidots ar saraksta palīdzību-->
       <div class="page info odd own-size saturs">
         <div class="gramatas_saturs">
           <h1>Saturs</h1>
@@ -87,7 +91,7 @@
           <p class="atzina">
             Māris Bērziņš - rakstnieks, sešu romānu, vairāku īsprozas un lugu krājumu autors. Sarakstījis romānu "Svina garša", par ko saņēmis plašu
             atzinību un vairākas godalgas, tostarp Dzintara Soduma balvu par novatorismu literatūrā un Baltijas Asamblejas balvu. Grāmatu sērijas "Es
-            esmu..." ietvaros sarakstījis romānu "Nākotnes kalējs" par rakstnieku, Latvijas PSR Tautas komisāru padomes, Latvijas PSR Ministru Padomes
+            esmu..." ietvaros sarakstījis romānu "Nākotnes kalējs" par rakstnieku, Latvijas PSR Tautas komisāru padomes, Latvijas PSR Ministru Padomes
             un PSRS Augstākās Padomes Tautību padomes priekšsēdētāju Vili Lāci.
           </p>
         </div>
@@ -169,6 +173,7 @@
       </div>
 
       <div class="page info even own-size gramatas_saturs"></div>
+      <!--Beigu lapas saturs, priekš vieglākas un ērtākas kustības starp lapaspusēm-->
       <div class="page info odd own-size saturs">
         <div class="gramatas_saturs">
           <h1>Saturs</h1>
@@ -196,6 +201,7 @@
         </div>
       </div>
       <div class="page info even own-size gramatas_saturs"></div>
+      <!--Grāmatas aizverošie cietie vāki-->
       <div class="hard fixed cover back"></div>
       <div class="hard cover back">
         <footer>
@@ -206,10 +212,13 @@
       </div>
     </div>
 
+    <!--Tiek pievienota divas javascript bibliotēkas un pašizveidots javascript kods, kas ir nepieciešama grāmatas izveidošanai-->
     <script src="jquery.js"></script>
     <script src="turn.min.js"></script>
     <script src="interaction.js"></script>
+
     <script>
+      // Inicializē(izveido) interaktīvo grāmatu, kurā tika apkopota visa informācija, kā arī iestata dažus grāmatas pamatus
       $("#flipbook").turn({
         width: 960,
         height: 600,
@@ -222,6 +231,7 @@
           },
         },
       });
+      //Šīs kods nosaka, ka kad tiek uzklikšķināts uz kādas no navigācijas saitēm, tad grāmata pārvietojas uz attiecīgo lapaspusi
       $(document).on("click", ".saturs a", function (e) {
         e.preventDefault();
         var page = $(this).data("page");
